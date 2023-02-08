@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS picture_db;
+CREATE DATABASE picture_db;
