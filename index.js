@@ -7,6 +7,7 @@ mng.mosaic(
     30,
     100,
     100,
+    'thumbnails',
     null,
     true
 );
