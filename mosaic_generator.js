@@ -1,7 +1,8 @@
+//npm mosaic generator package
+
 var mng = require('mosaic-node-generator');
 
 const generateMosaic = (file_name) => {
-    console.log('file_name in generate: ', file_name)
     mng.mosaic(
         file_name,
         'images',

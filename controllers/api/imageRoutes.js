@@ -8,7 +8,6 @@ router.post('/upload', async (req, res) => {
     const imagePath = __dirname + '/upload/' + image.name;
     await image.mv(imagePath);
     generateMosaic(imagePath)
-    // setTimeout(generateMosaic, 1500, imagePath)
     res.sendStatus(200);
 });
 
