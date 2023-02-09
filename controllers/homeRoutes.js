@@ -15,9 +15,13 @@ router.get('/', async (req,res) => {
 
         const images = imageData.map((image) => image.get({ plain: true}));
 
-        res.render('')
-    }
-    catch{}
-})
+        res.render('image', { 
+            images, 
+            logged_in: req.session.logged_in 
+          });
+        } catch (err) {
+          res.status(500).json(err);
+        }
+      });
 
 module.exports = router;
