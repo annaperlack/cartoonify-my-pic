@@ -12,7 +12,7 @@ Image.init(
       autoIncrement: true,
     },
     image: {
-      type: DataTypes.STRING, //or blob??? string with cloudinary 
+      type: DataTypes.STRING,
       allowNull: false,
     },
     user_id: {
