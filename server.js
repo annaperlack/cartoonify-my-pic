@@ -4,7 +4,6 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const fileUpload = require('express-fileupload');
 const routes = require('./controllers');
-// const cloudinary = require('cloudinary').v2;
 require('dotenv').config();
 
 const sequelize = require('./config/connection');
@@ -46,14 +45,3 @@ app.use(routes);
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => console.log('Now listening'));
 });
-
-// cloudinary.uploader 
-//   .upload ('./outputs/output2.jpg', {
-//     resource_type: 'image',
-//   })
-//   .then((result) => {
-//     console.log("success", JSON.stringify(result, null,2));
-//   })
-//   .catch((error) => {
-//     console.log("error", JSON.stringify(error, null, 2));
-//   })
