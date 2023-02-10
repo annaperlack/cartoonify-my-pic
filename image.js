@@ -6,7 +6,7 @@ const uploadPicture = (file_name) => {
     cloudinary.uploader 
     .upload (file_name, {
         resource_type: 'image',
-    
+        effect: "cartoonify"
     })
     .then((result) => {
         console.log("success", JSON.stringify(result.url, null,2));
