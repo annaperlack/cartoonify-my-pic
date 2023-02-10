@@ -2,10 +2,12 @@
 <button id="upload-button" onclick="uploadFile()"> Upload </button> --}}
 {{!-- Choose file and upload should be on profile page --}}
 
-
-
+<div class="container">
+  <div class="row">
 {{#each images as |image|}}
-      <div class="col-md-8">
+<div class="container">
+  <div class="row">
+      <div class="col-sm">
         <h4><img src="{{image.image}}"></h4>
       </div>
     {{/each}}
