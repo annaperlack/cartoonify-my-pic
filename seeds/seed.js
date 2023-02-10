@@ -14,7 +14,7 @@ const userData = [
 
 const imageData = [
   {
-    image: 'http://res.cloudinary.com/dfk0sfgij/image/upload/v1675905014/ccinppvl5knnstommltf.jpg',
+    image: 'http://res.cloudinary.com/dfk0sfgij/image/upload/v1675985431/k0wrvqbbe3zcipnhcpeh.jpg',
     user_id: 1,
   },
 ];
