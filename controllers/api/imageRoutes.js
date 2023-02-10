@@ -4,6 +4,7 @@ const { Image } = require('../../models');
 
 router.post('/upload', async (req, res) => {
     const { image } = req.files;
+    console.dir({image},{colors: true})
     if (!image) return res.sendStatus(400);
 
     const imagePath = __dirname + '/upload/' + image.name;
