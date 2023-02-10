@@ -6,6 +6,7 @@ const fileUpload = require('express-fileupload');
 const routes = require('./controllers');
 require('dotenv').config();
 
+
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 

@@ -23,9 +23,9 @@ router.get('/', async (req,res) => {
           res.status(500).json(err);
         }
       });
-      router.get('/project/:id', async (req, res) => {
+      router.get('/image/:id', async (req, res) => {
         try {
-          const projectData = await Project.findByPk(req.params.id, {
+          const imageData = await Image.findByPk(req.params.id, {
             include: [
               {
                 model: User,
@@ -34,9 +34,9 @@ router.get('/', async (req,res) => {
             ],
           });
       
-          const project = projectData.get({ plain: true });
+          const project = imageData.get({ plain: true });
       
-          res.render('project', {
+          res.render('image', {
             ...project,
             logged_in: req.session.logged_in
           });
