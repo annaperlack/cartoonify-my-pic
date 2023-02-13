@@ -8,10 +8,12 @@ router.post('/upload', async (req, res) => {
     if (!image) return res.sendStatus(400);
 
     const imagePath = __dirname + '/upload/' + image.name;
-    await image.mv(imagePath);
-    uploadPicture(imagePath);
+    const response = await image.mv(imagePath);
+    console.log(response);
+    const imageData = await uploadPicture(imagePath);
+    console.log(imageData);
 
-    res.sendStatus(200);
+    res.status(200).json(imageData);
 });
 
 

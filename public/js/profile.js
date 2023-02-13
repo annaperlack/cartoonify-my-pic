@@ -1,35 +1,36 @@
-
 const newFormHandler = async (event) => {
-    event.preventDefault();
+  event.preventDefault();
 
+  const image = document;
 
-const image = document
-
-
-if (image) {
+  if (image) {
     const response = await fetch(`/api/images/upload`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({ image }),
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
     });
 
     if (response.ok) {
-      document.location.replace('/profile');
+      document.location.replace("/profile");
     } else {
-      alert('Failed to create project');
+      alert("Failed to create project");
     }
   }
 };
 
 async function uploadFile() {
-    let formData = new FormData();           
-    formData.append("image", fileupload.files[0]);
-    await fetch('/api/images/upload', {
-      method: "POST", 
-      body: formData
-    });    
-    alert('The file has been uploaded successfully.');
-}
-
+  let formData = new FormData();
+  formData.append("image", fileupload.files[0]);
+  const response = await fetch("/api/images/upload", {
+    method: "POST",
+    body: formData,
+  });
+  console.log(response);
+  if (response.ok) {
+  alert("The file has been uploaded successfully.");
+  } else {
+    alert("Bad Error!");
+  }
+};
