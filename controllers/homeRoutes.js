@@ -15,15 +15,15 @@ router.get("/", async (req, res) => {
 
     const images = imageData.map((image) => image.get({ plain: true }));
 
-    res.render("image", {
-      images,
+    res.render("login", {
+      // images,
       logged_in: req.session.logged_in,
     });
   } catch (err) {
     res.status(500).json(err);
   }
 });
-router.get("/image/:id", async (req, res) => {
+router.get("/profile/:id", async (req, res) => {
   try {
     const imageData = await Image.findByPk(req.params.id, {
       include: [
@@ -36,7 +36,7 @@ router.get("/image/:id", async (req, res) => {
 
     const project = imageData.get({ plain: true });
 
-    res.render("image", {
+    res.render("login", {
       ...project,
       logged_in: req.session.logged_in,
     });
