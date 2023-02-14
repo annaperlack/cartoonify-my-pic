@@ -1,29 +1,20 @@
 <div class="row">
   <div class="col-auto">
-
     <h2>Welcome, {{name}}!</h2>
     <input id="fileupload" type="file" name="fileupload" />
-<button id="upload-button" class = "btn btn-primary" onclick="uploadFile()"> Upload </button>
-<div class="container">
-  
-  <div class="row">
-{{#each images as |image|}}
-      <div class="col-md-8">
-        <h4><img src="{{image.image}}"></h4>
+    <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
+      Upload
+    </button>
+    <div class="container">
+      <div class="row">
+        {{#each images as |image|}}
+          <div class="col-md-8">
+            <h4><img src="{{image.image}}" /></h4>
+          </div>
+        {{/each}}
+        <script src="./js/profile.js"></script>
       </div>
-    {{/each}}
-
-<script src="./js/profile.js"></script>
+    </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 <script src="./js/profile.js"></script>
