@@ -12,17 +12,12 @@
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <a href="/">Cartoonify My Pic!</a>
+      <h1>Cartoonify My Pic!</h1>
         <h3>Welcome to your place to upload your pics and let us style them into adorable cartoon art you'll want to share with friends and family!</h3>
-      </h1>
         <nav>
-         <!-- Conditionally render login or logout links -->
          {{#if logged_in}}
           <a href="/profile">profile</a> |
           <button class="no-button" id="logout">logout</button>
-         {{else}}
-          <a href="/login">login</a>
           {{/if}}
         </nav>
     </header>
