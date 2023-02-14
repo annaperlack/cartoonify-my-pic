@@ -3,9 +3,8 @@ const uploadPicture = require ('../../image');
 const { Image } = require('../../models');
 
 router.post('/upload', async (req, res) => {
+  if (!req.files) return res.sendStatus(400);
     const { image } = req.files;
-    if (!image) return res.sendStatus(400);
-
     const imagePath = __dirname + '/upload/' + image.name;
     await image.mv(imagePath);
     const imageData = await uploadPicture(imagePath, req.session.user_id);
