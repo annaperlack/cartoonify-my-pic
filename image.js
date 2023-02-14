@@ -1,7 +1,7 @@
 const cloudinary = require("cloudinary").v2;
 const { Image } = require("./models");
 
-const uploadPicture = (file_name) => {
+const uploadPicture = (file_name, user_id) => {
   cloudinary.uploader
     .upload(file_name, {
       resource_type: "image",
@@ -10,9 +10,7 @@ const uploadPicture = (file_name) => {
       crop: "scale",
     })
     .then(async (result) => {
-      console.log("success", JSON.stringify(result.url, null, 2));
-      const data = await Image.create({ image: result.url, user_id: 2 });
-      console.log(data);
+      const data = await Image.create({ image: result.url, user_id: user_id });
       return data;
     })
     .catch((error) => {

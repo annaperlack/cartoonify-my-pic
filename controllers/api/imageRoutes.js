@@ -4,14 +4,12 @@ const { Image } = require('../../models');
 
 router.post('/upload', async (req, res) => {
     const { image } = req.files;
-    console.dir({image},{colors: true})
     if (!image) return res.sendStatus(400);
 
     const imagePath = __dirname + '/upload/' + image.name;
-    const response = await image.mv(imagePath);
-    console.log(response);
-    const imageData = await uploadPicture(imagePath);
-    console.log(imageData);
+    await image.mv(imagePath);
+    const imageData = await uploadPicture(imagePath, req.session.user_id);
+
 
     res.status(200).json(imageData);
 });
