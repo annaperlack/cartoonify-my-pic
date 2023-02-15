@@ -31,6 +31,7 @@ router.get('/', async (req, res) => {
           id: req.params.id,
         },
       });
+      console.log(imageData)
   
       if (!imageData) {
         res.status(404).json({ message: 'No project found with this id!' });
@@ -39,6 +40,7 @@ router.get('/', async (req, res) => {
   
       res.status(200).json(imageData);
     } catch (err) {
+      console.log(err)
       res.status(500).json(err);
     }
   });
