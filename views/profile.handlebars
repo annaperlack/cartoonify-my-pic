@@ -1,5 +1,10 @@
 <div class="row">
   <div class="col-auto">
+     <nav>
+         {{#if logged_in}}
+          <button class="no-button" id="logout">logout</button>
+          {{/if}}
+        </nav>
     <h1>Welcome, {{name}}!</h1>
     <input id="fileupload" type="file" name="fileupload" />
     <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
