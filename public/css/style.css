@@ -1,40 +1,47 @@
 body {
-  padding: 10px;
+    padding: 10px;
 }
 
 .logout {
-  width: 100%;
-  text-align: right;
+    width: 100%;
+    text-align: right;
 }
 
 #logout {
-  color: white;
+    color: white;
 }
 
 h1 {
-  font-size: 72px;
-  text-align: center;
-  padding-bottom: 20px;
+    font-size: 72px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .images {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .delete {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .upload-group {
-  width: 100%;
-  text-align: center;
+    width: 100%;
+    text-align: center;
 }
 
 .card {
-  margin-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .carousel-inner img {
-  margin: auto;
+    margin: auto;
+}
+
+
+@media screen and (max-height: 1000px) {
+    .carousel-item {
+        height: 24rem;
+    }
 }
