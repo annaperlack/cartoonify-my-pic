@@ -22,11 +22,10 @@
  5. Open browser and go to localhost:3001
 
   ## Usage
-  Sign up at the starter page!
+  Sign up on the starter page!
   ![image](/public/images/loginpage.png)
 
-  Or/Then
-  Login and add your pictures using the "Choose File" button
+  Then login and add your pictures using the `Choose File` button
   ![image](/public/images/profilepage.png)
 
   Click `Upload Image` after you have uploaded your file. Your image will then be transformed into a "cartoonified" version that you can share with friends and family!
