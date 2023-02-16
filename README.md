@@ -9,7 +9,8 @@
 
   ## Description
   Welcome to Cartoonify!! This is an image host that allows you to upload your images and "Cartoonify" them!
-  https://cartoonify-my-pic.herokuapp.com/login -- Web URL
+  [Cartoonify My Pic Website](https://cartoonify-my-pic.herokuapp.com/login)
+
   ## Installation
  For local usage:
  1. Run `npm i`
@@ -20,11 +21,11 @@
 
   ## Usage
   Sign up at the starter page!
-  ![image](/controllers/api/upload/Screenshot%20(66).png)
+  ![image](/public/images/loginpage.png)
 
   Or/Then
   Login and add your pictures using the "Choose File" button
-  ![image](/controllers/api/upload/Screenshot%20(67).png)
+  ![image](/public/images/profilepage.png)
 
   Click Upload after you have loaded the file.
   Congratulations you have successfully used this app!, what will be returned is a "Cartoonified" version of the picture that you have uploaded
@@ -53,6 +54,6 @@
   ## Questions
   Questions? Comments? Want to hire us? 
   Daniel email - dbp1795@aim.com 
-  330 758 0011
+  330-758-0011
   ## License
   [![License: mit](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
