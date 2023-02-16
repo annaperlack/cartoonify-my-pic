@@ -8,7 +8,7 @@
 
 
   ## Description
-  Welcome to Cartoonify!! This application allows you to upload your images and "cartoonify" them with one simple click! See blow for examples.
+  Welcome to Cartoonify!! This application allows you to upload your images and "cartoonify" them with one simple click! See below for examples.
 
 
   [Cartoonify My Pic Website](https://cartoonify-my-pic.herokuapp.com/login)
@@ -51,7 +51,7 @@
   Chris Purnell - [Github](https://github.com/CTpurnell)
   Daniel Prussia - [Github](https://github.com/Billthebaker/)
   Fred Joss - [Github](https://github.com/FDjoss/)
-  Vinnie Lopez - [Github](https://github.com/vlopez99/)
+  Vinny Lopez - [Github](https://github.com/vlopez99/)
  
   ## Questions
   Questions? Comments? Want to hire us?
