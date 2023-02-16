@@ -29,7 +29,7 @@ async function uploadFile() {
   });
   console.log(response);
   if (response.ok) {
-  alert("The file has been uploaded successfully.");
+    alert("The file has been uploaded successfully.");
   setTimeout(function() {
     window.location.reload()
   },2500);
