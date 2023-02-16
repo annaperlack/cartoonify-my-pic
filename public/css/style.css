@@ -1,0 +1,36 @@
+body {
+    padding: 10px;
+}
+
+.logout {
+    width: 100%;
+    text-align: right;
+}
+
+#logout {
+    color: white
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.images {
+    margin-top: 10px;
+}
+
+.delete {
+    width: 100%;
+    text-align: center;
+}
+
+.upload-group {
+    width: 100%;
+    text-align: center;
+}
+
+.card {
+    margin-bottom: 10px;
+}

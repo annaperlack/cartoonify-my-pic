@@ -1,25 +1,27 @@
-<div class="row">
-  <div class="col-auto">
-     <nav>
-         {{#if logged_in}}
-          <button class="no-button" id="logout">logout</button>
-          {{/if}}
-        </nav>
-    <h1>Welcome, {{name}}!</h1>
+<div class="row text-bg-success">
+  <div class="col-md-12">
+    <div class="logout">
+      <button class="btn btn-link" id="logout">logout</button>
+    </div>
+    <div class="row">
+      <h1>Welcome, {{name}}!</h1>
+    </div>
+    <div class="upload-group">
     <input id="fileupload" type="file" name="fileupload" />
     <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
       Upload Image
     </button>
+    </div>
     <div class="container">
-      <div class="row">
+      <div class="row images">
         {{#each images as |image|}}
-        <div class="col-md-8">
+        <div class="col-4">
           <div class="card">
-            <a href="{{image.image}}" download = "cartoonimage.jpg">
-            <img class="card-img-top" src="{{image.image}}" alt="Card image cap"/>
+            <a href="{{image.image}}" download="cartoonimage.jpg">
+              <img class="card-img-top" src="{{image.image}}" alt="Card image cap" />
             </a>
-            <div class="card-body">
-              <button data-imageId="{{image.id}}" onclick="deleteImage(event)" class="btn btn-primary delete-btn">Delete
+            <div class="card-body delete">
+              <button data-imageId="{{image.id}}" onclick="deleteImage(event)" class="btn btn-secondary delete-btn">Delete
                 Image</button>
             </div>
           </div>
