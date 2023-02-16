@@ -37,4 +37,6 @@ h1 {
 
 .carousel-inner img {
   margin: auto;
+  max-width: 100%;
+  max-height: fit-content;
 }
