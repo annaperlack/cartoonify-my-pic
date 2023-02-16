@@ -1,18 +1,20 @@
 body {
+
     padding: 10px;
     font-family: 'Comfortaa', cursive;
     background-color: #6495ED;
     color: white;
 
+
 }
 
 .logout {
-    width: 100%;
-    text-align: right;
+  width: 100%;
+  text-align: right;
 }
 
 #logout {
-    color: white;
+  color: white;
 }
 
 h1 {
@@ -23,47 +25,39 @@ h1 {
 }
 
 .images {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 .delete {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .upload-group {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
 .card {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
-
 
 .modal-title {
-    color: black;
+  color: black;
 }
 
-
 .modal-body {
-    color: black;
-};
-
+  color: black;
+}
 
 .carousel-inner img {
-    margin: auto;
-  }
-
-  .carousel-inner img {
-    margin: auto;
-    max-width: 100%;
-    max-height: fit-content;
-  }
-
+  margin: auto;
+  max-width: 100%;
+  max-height: fit-content;
+}
 
 @media screen and (max-height: 1000px) {
-    .carousel-item {
-        height: 24rem;
-    }
+  .carousel-item {
+    height: 24rem;
+  }
 }
