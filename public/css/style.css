@@ -1,5 +1,9 @@
 body {
     padding: 10px;
+    font-family: 'Comfortaa', cursive;
+    background-color: #6495ED;
+    color: white;
+
 }
 
 .logout {
@@ -15,6 +19,7 @@ h1 {
     font-size: 72px;
     text-align: center;
     padding-bottom: 20px;
+    font-family: 'Pacifico', cursive;
 }
 
 .images {

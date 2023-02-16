@@ -1,4 +1,4 @@
-<div class="row text-bg-success">
+<div class="row">
   <div class="col-md-12">
     <div class="logout">
       <button class="btn btn-link" id="logout">logout</button>
@@ -7,8 +7,8 @@
       <h1>Welcome, {{name}}!</h1>
     </div>
     <div class="upload-group">
-      <input id="fileupload" type="file" name="fileupload"/>
-      <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
+      <input id="fileupload" type="file" name="fileupload" />
+      <button id="upload-button" class="btn btn-secondary" onclick="uploadFile()">
         Upload Image
       </button>
       <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
@@ -38,8 +38,7 @@
               <img class="card-img-top" src="{{image.image}}" alt="Card image cap" />
             </a>
             <div class="card-body delete">
-              <button data-imageId="{{image.id}}" onclick="deleteImage(event)"
-                class="btn btn-secondary delete-btn">Delete
+              <button data-imageId="{{image.id}}" onclick="deleteImage(event)" class="btn btn-light delete-btn">Delete
                 Image</button>
             </div>
           </div>
