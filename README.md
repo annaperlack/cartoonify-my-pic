@@ -22,7 +22,7 @@
  5. Open browser and go to localhost:3001
 
   ## Usage
-  Sign up at the starter page!
+  Sign up on the starter page!
   ![image](/public/images/loginpage.png)
 
   Then login and add your pictures using the `Choose File` button
