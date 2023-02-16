@@ -7,10 +7,27 @@
       <h1>Welcome, {{name}}!</h1>
     </div>
     <div class="upload-group">
-    <input id="fileupload" type="file" name="fileupload" />
-    <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
-      Upload Image
-    </button>
+      <input id="fileupload" type="file" name="fileupload"/>
+      <button id="upload-button" class="btn btn-primary" onclick="uploadFile()">
+        Upload Image
+      </button>
+      <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Cartoonify My Pic</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Your image was successfully uploaded! Please allow 3-5 seconds for us to cartoonify your pic!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="container">
       <div class="row images">
@@ -21,7 +38,8 @@
               <img class="card-img-top" src="{{image.image}}" alt="Card image cap" />
             </a>
             <div class="card-body delete">
-              <button data-imageId="{{image.id}}" onclick="deleteImage(event)" class="btn btn-secondary delete-btn">Delete
+              <button data-imageId="{{image.id}}" onclick="deleteImage(event)"
+                class="btn btn-secondary delete-btn">Delete
                 Image</button>
             </div>
           </div>

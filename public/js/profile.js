@@ -27,14 +27,14 @@ async function uploadFile() {
     method: "POST",
     body: formData,
   });
-  console.log(response);
+
   if (response.ok) {
-    alert("The file has been uploaded successfully.");
+    $("#successModal").modal('show');
   setTimeout(function() {
     window.location.reload()
-  },2500);
+  },3000);
   } else {
-    alert("Bad Error!");
+    alert("Please upload an image first");
   }
 };
 
@@ -44,10 +44,10 @@ async function deleteImage(event) {
   const response = await fetch(`/api/images/${id}`,{
     method: "DELETE",
   });
-  console.log(response)
+
   if (response.ok) {
     await window.location.reload()
   } else {
-    alert("Bad Error!")
+    alert("Bad Error")
   }
 };

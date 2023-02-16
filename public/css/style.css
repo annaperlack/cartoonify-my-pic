@@ -35,11 +35,21 @@ h1 {
     margin-bottom: 25px;
 }
 
-.carousel-inner img {
-  margin: auto;
-  max-width: 100%;
-  max-height: fit-content;
+
+.modal-title {
+    color: black;
 }
+
+
+.modal-body {
+    color: black;
+
+
+.carousel-inner img {
+    margin: auto;
+    max-width: 100%;
+    max-height: fit-content;
+  }
 
 
 @media screen and (max-height: 1000px) {
