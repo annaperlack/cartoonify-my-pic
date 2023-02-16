@@ -7,6 +7,10 @@ body {
     text-align: right;
 }
 
+#logout {
+    color: white
+}
+
 h1 {
     font-size: 48px;
     text-align: center;
@@ -25,4 +29,8 @@ h1 {
 .upload-group {
     width: 100%;
     text-align: center;
+}
+
+.card {
+    margin-bottom: 10px;
 }
