@@ -8,7 +8,9 @@
 
 
   ## Description
-  Welcome to Cartoonify!! This is an image host that allows you to upload your images and "Cartoonify" them!
+  Welcome to Cartoonify!! This application allows you to upload your images and "cartoonify" them with one simple click! See blow for examples.
+
+
   [Cartoonify My Pic Website](https://cartoonify-my-pic.herokuapp.com/login)
 
   ## Installation
@@ -27,8 +29,8 @@
   Login and add your pictures using the "Choose File" button
   ![image](/public/images/profilepage.png)
 
-  Click Upload after you have loaded the file.
-  Congratulations you have successfully used this app!, what will be returned is a "Cartoonified" version of the picture that you have uploaded
+  Click `Upload Image` after you have uploaded your file. Your image will then be transformed into a "cartoonified" version that you can share with friends and family!
+  
 
   ## Applications Used
         bcrypt
@@ -46,14 +48,24 @@
         sequelize
 
   ## Contribution
-  Daniel Prussia - [Github](https://github.com/Billthebaker/)
   Anna Perlack - [Github](https://github.com/annaperlack/)
+  Chris Purnell - [Github](https://github.com/CTpurnell)
+  Daniel Prussia - [Github](https://github.com/Billthebaker/)
   Fred Joss - [Github](https://github.com/FDjoss/)
   Vinnie Lopez - [Github](https://github.com/vlopez99/)
-  Chris Purnell - [Github](https://github.com/CTpurnell)
+ 
   ## Questions
-  Questions? Comments? Want to hire us? 
-  Daniel email - dbp1795@aim.com 
-  330-758-0011
+  Questions? Comments? Want to hire us?
+
+  Anna- annaperlack@gmail.com
+
+  Chris- ctp0941@gmail.com
+
+  Daniel- dbp1795@aim.com 
+  
+  Fred- fdjoss@gmail.com
+
+  Vinny- vinnylopez99@yahoo.com
+
   ## License
   [![License: mit](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
